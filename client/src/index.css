@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #030014;
+  --surface-color: #0f172a;
+  --surface-hover: #1e293b;
+  --primary-color: #8b5cf6;
+  --primary-glow: rgba(139, 92, 246, 0.4);
+  --secondary-color: #ec4899;
+  --accent-color: #6366f1;
+  --text-color: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+  --glass-bg: rgba(15, 23, 42, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  --font-main: 'Outfit', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+
+  --name-gradient: linear-gradient(to right, #fff, #cbd5e1);
+  --badge-bg: rgba(30, 41, 59, 0.9);
+
+  /* Code Syntax Colors (Dark Mode) */
+  --code-text: #e2e8f0;
+  --code-keyword: #c084fc;
+  --code-variable: #60a5fa;
+  --code-string: #34d399;
+  --code-boolean: #f472b6;
+
+  /* Section Title & Buttons (Dark Mode) */
+  --title-gradient: linear-gradient(to right, #fff, #94a3b8);
+  --btn-sec-color: #ffffff;
+  --btn-sec-border: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme='light'] {
+  --bg-color: #f3f0ff;
+  --surface-color: #ffffff;
+  --surface-hover: #e0e7ff;
+  /* Mixed Indigo Tint for gradient effects */
+  --text-color: #0f172a;
+  --text-muted: #475569;
+  --text-dim: #64748b;
+
+  /* 2-Color Mixed Gradient for all glass boxes */
+  --glass-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(224, 231, 255, 0.9) 100%);
+  --glass-border: rgba(139, 92, 246, 0.2);
+  --glass-shadow: 0 10px 40px -10px rgba(124, 58, 237, 0.1);
+
+  --name-gradient: linear-gradient(to right, #4c1d95, #7c3aed);
+  --badge-bg: #ffffff;
+
+  /* Code Syntax Colors (Light Mode) */
+  --code-text: #334155;
+  --code-keyword: #7e22ce;
+  --code-variable: #2563eb;
+  --code-string: #059669;
+  --code-boolean: #db2777;
+
+  /* Section Title & Buttons (Light Mode) */
+  --title-gradient: linear-gradient(to right, #1e1b4b, #6d28d9);
+  --btn-sec-color: #4c1d95;
+  --btn-sec-border: rgba(139, 92, 246, 0.3);
+}
+
+/* Specific overrides for light mode background */
+[data-theme='light'] body {
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 40%);
+}
+
+[data-theme='light'] body::before {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.05) 0%, transparent 50%),
+    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 85% 30%, rgba(236, 72, 153, 0.12) 0%, transparent 50%);
+  background-attachment: fixed;
+  background-size: 200% 200%;
+  animation: background-pan 20s ease infinite;
+}
+
+@keyframes background-pan {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Advanced Animated Background Mesh */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.05) 0%, transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: -1;
+  pointer-events: none;
+  mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Modern Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-hover);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Glassmorphism Card Utility */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 20px;
+}
+
+/* Advanced Button Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 2rem;
+  background: var(--accent-gradient);
+  color: white;
+  border-radius: 50px;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(168, 85, 247, 0.5);
+}
+
+.btn:hover::before {
+  opacity: 1;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid var(--btn-sec-border);
+  box-shadow: none;
+  color: var(--btn-sec-color) !important;
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--text-color);
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.1);
+}
+
+/* Typography Enhancements */
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4rem;
+  background: var(--title-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: var(--accent-gradient);
+  border-radius: 2px;
+}
+
+.gradient-text {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-padding {
+  padding: 6rem 0;
+}
+
+/* Selection Color */
+::selection {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* Project Image Styles */
+.project-card {
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.1);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(15, 23, 42, 0.8) 100%);
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .image-overlay {
+  opacity: 0.3;
+}// Update 32 - 97545971
+// Update 39 - 1673080632
+// Update 45 - 1556399025
+// Update 56 - 2063904880
+// Update 61 - 1545629465
+// Update 72 - 56514975
+// Update 75 - 1965952171
+// Update 76 - 2056464547
+// Update 87 - 555696145
+// Update 45 - 29802033
+// Update 47 - 1061912678
+// Update 81 - 524573143
