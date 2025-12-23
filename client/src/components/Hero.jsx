@@ -370,3 +370,4 @@ export default Hero;
 // Update 73 - 1507803006
 // Update 74 - 398841943
 // Update 88 - 1455121537
+// Update 31 - 1568961096
