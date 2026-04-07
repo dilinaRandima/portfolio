@@ -16,7 +16,7 @@ const Projects = () => {
             tech: ["JavaScript", "Express", "React", "MongoDB"],
             link: "https://github.com/dilinaRandima/ITPM-Fruit-Management-System/tree/dilina",
             featured: true,
-            image: "/assets/project1.png"
+            image: "assets/project1.png"
         },
         {
             title: "Recipe Sharing Platform",
@@ -25,7 +25,7 @@ const Projects = () => {
             tech: ["React.js", "Spring Boot", "MongoDB"],
             link: "https://github.com/dilinaRandima/Recipe-Sharing-Platform",
             featured: false,
-            image: "/assets/project2.png"
+            image: "assets/project2.png"
         },
         {
             title: "Pet Ambulance Service",
@@ -34,7 +34,7 @@ const Projects = () => {
             tech: ["MongoDB", "Express.js", "React.js", "Node.js"],
             link: "https://github.com/dilinaRandima/Pet-Ambulance-Service",
             featured: false,
-            image: "/assets/project3.png"
+            image: "assets/project3.png"
         }
     ];
 
@@ -77,7 +77,7 @@ const Projects = () => {
                     {projectList.map((project, index) => (
                         <motion.div className="project-card glass-card" key={index} variants={item}>
                             <div className="project-image">
-                                <img src={project.image} alt={project.title} />
+                                <img src={`${import.meta.env.BASE_URL}${project.image}`} alt={project.title} />
                                 <div className="image-overlay"></div>
                             </div>
                             <div className="card-top">
