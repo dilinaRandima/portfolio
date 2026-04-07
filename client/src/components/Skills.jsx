@@ -15,7 +15,6 @@ const Skills = () => {
         { name: "React", icon: <FaReact />, color: "#61dafb" },
         { name: "Node.js", icon: <FaNodeJs />, color: "#68a063" },
         { name: "MongoDB", icon: <BiLogoMongodb />, color: "#47A248" },
-        { name: "JavaScript", icon: <BiLogoJavascript />, color: "#f7df1e" },
         { name: "Java", icon: <FaJava />, color: "#f89820" },
         { name: "HTML5", icon: <FaHtml5 />, color: "#e34f26" },
         { name: "CSS3", icon: <FaCss3Alt />, color: "#2965f1" },
