@@ -12,7 +12,7 @@ import { FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
+    const [theme, setTheme] = useState('dark');
 
     useEffect(() => {
         const handleScroll = () => {

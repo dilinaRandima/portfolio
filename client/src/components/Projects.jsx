@@ -237,23 +237,3 @@ const Projects = () => {
 };
 
 export default Projects;
-// Update 31 - 1966713086
-// Update 33 - 1345198885
-// Update 54 - 1889644304
-// Update 66 - 503412430
-// Update 32 - 1785795499
-// Update 33 - 872969878
-// Update 44 - 1036297182
-// Update 62 - 614731760
-// Update 64 - 1333196182
-// Update 65 - 1218022310
-// Update 66 - 1427942536
-// Update 79 - 1121937199
-// Update 83 - 245415431
-// Update 84 - 341923169
-// Update 40 - 1556807280
-// Update 53 - 813471006
-// Update 59 - 400868694
-// Update 60 - 47587697
-// Update 63 - 65990348
-// Update 80 - 34716193

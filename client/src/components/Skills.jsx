@@ -5,9 +5,10 @@
  * Features a spotlight hover effect for enhanced interactivity.
  */
 import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs, FaJava, FaGitAlt, FaHtml5, FaCss3Alt, FaFigma, FaGithub } from 'react-icons/fa';
-import { BiLogoMongodb, BiLogoJavascript, BiLogoTypescript } from 'react-icons/bi';
+import { FaReact, FaNodeJs, FaJava, FaGitAlt, FaHtml5, FaCss3Alt, FaGithub } from 'react-icons/fa';
+import { BiLogoMongodb, BiLogoJavascript } from 'react-icons/bi';
 import { VscVscode } from 'react-icons/vsc';
+import ColoredFigmaIcon from './ColoredFigmaIcon';
 
 const Skills = () => {
     const skills = [
@@ -15,14 +16,13 @@ const Skills = () => {
         { name: "Node.js", icon: <FaNodeJs />, color: "#68a063" },
         { name: "MongoDB", icon: <BiLogoMongodb />, color: "#47A248" },
         { name: "JavaScript", icon: <BiLogoJavascript />, color: "#f7df1e" },
-        { name: "TypeScript", icon: <BiLogoTypescript />, color: "#3178c6" },
         { name: "Java", icon: <FaJava />, color: "#f89820" },
         { name: "HTML5", icon: <FaHtml5 />, color: "#e34f26" },
         { name: "CSS3", icon: <FaCss3Alt />, color: "#2965f1" },
         { name: "Git", icon: <FaGitAlt />, color: "#f05032" },
         { name: "GitHub", icon: <FaGithub />, color: "#6e5494" },
         { name: "VS Code", icon: <VscVscode />, color: "#007acc" },
-        { name: "Figma", icon: <FaFigma />, color: "#f24e1e" },
+        { name: "Figma", icon: <ColoredFigmaIcon />, color: "transparent" },
     ];
 
     const container = {
@@ -223,21 +223,3 @@ const Skills = () => {
 };
 
 export default Skills;
-// Update 47 - 130650838
-// Update 49 - 1711358570
-// Update 58 - 210075599
-// Update 81 - 887685040
-// Update 83 - 1962935356
-// Update 36 - 1298912314
-// Update 43 - 1442536480
-// Update 56 - 948135954
-// Update 57 - 637901072
-// Update 75 - 823079378
-// Update 80 - 834493339
-// Update 87 - 419602306
-// Update 48 - 619273687
-// Update 49 - 615574357
-// Update 57 - 1801707873
-// Update 62 - 839637905
-// Update 72 - 1483662465
-// Update 78 - 2055064467

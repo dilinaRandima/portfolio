@@ -4,15 +4,15 @@
   --bg-color: #030014;
   --surface-color: #0f172a;
   --surface-hover: #1e293b;
-  --primary-color: #8b5cf6;
-  --primary-glow: rgba(139, 92, 246, 0.4);
-  --secondary-color: #ec4899;
-  --accent-color: #6366f1;
+  --primary-color: #3b82f6;
+  --primary-glow: rgba(59, 130, 246, 0.4);
+  --secondary-color: #ffffff;
+  --accent-color: #60a5fa;
   --text-color: #f8fafc;
   --text-muted: #94a3b8;
   --text-dim: #64748b;
 
-  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+  --accent-gradient: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
   --glass-bg: rgba(15, 23, 42, 0.6);
   --glass-border: rgba(255, 255, 255, 0.08);
   --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -61,21 +61,21 @@
   --code-boolean: #db2777;
 
   /* Section Title & Buttons (Light Mode) */
-  --title-gradient: linear-gradient(to right, #1e1b4b, #6d28d9);
-  --btn-sec-color: #4c1d95;
-  --btn-sec-border: rgba(139, 92, 246, 0.3);
+  --title-gradient: linear-gradient(to right, #1d4ed8, #8b5cf6);
+  --btn-sec-color: #1d4ed8;
+  --btn-sec-border: rgba(59, 130, 246, 0.3);
 }
 
 /* Specific overrides for light mode background */
 [data-theme='light'] body {
   background-image:
-    radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 40%),
-    radial-gradient(circle at 90% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 40%);
+    radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(147, 197, 253, 0.1) 0%, transparent 40%);
 }
 
 [data-theme='light'] body::before {
   background:
-    radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
     linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
 }
@@ -90,8 +90,8 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   background-image:
-    radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.12) 0%, transparent 50%),
-    radial-gradient(circle at 85% 30%, rgba(236, 72, 153, 0.12) 0%, transparent 50%);
+    radial-gradient(circle at 15% 50%, rgba(37, 99, 235, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 85% 30%, rgba(147, 197, 253, 0.12) 0%, transparent 50%);
   background-attachment: fixed;
   background-size: 200% 200%;
   animation: background-pan 20s ease infinite;
@@ -305,22 +305,4 @@ body::before {
 
 .project-card:hover .image-overlay {
   opacity: 0.3;
-}// Update 32 - 97545971
-// Update 39 - 1673080632
-// Update 45 - 1556399025
-// Update 56 - 2063904880
-// Update 61 - 1545629465
-// Update 72 - 56514975
-// Update 75 - 1965952171
-// Update 76 - 2056464547
-// Update 87 - 555696145
-// Update 45 - 29802033
-// Update 47 - 1061912678
-// Update 81 - 524573143
-// Update 34 - 1838000084
-// Update 38 - 1269029672
-// Update 69 - 1127430152
-// Update 76 - 22578745
-// Update 79 - 2069513618
-// Update 83 - 2009696924
-// Update 86 - 573703312
+}

@@ -1,0 +1,49 @@
+.cursor-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+.cursor-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.cursor-ring {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid var(--primary-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+/* Hover State */
+.cursor-dot.hovering {
+    transform: translate(-50%, -50%) scale(0);
+    background-color: transparent;
+}
+
+.cursor-ring.hovering {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-glow);
+    border-color: transparent;
+}
+
+/* Restored the default system cursor arrow below */
+body, a, button, input, textarea, select, .glass-card, .btn {
+    cursor: auto;
+}
+
+a, button, .btn {
+    cursor: pointer;
+}

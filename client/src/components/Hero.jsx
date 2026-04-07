@@ -316,16 +316,16 @@ const Hero = () => {
                     border-radius: 12px;
                     background: rgba(255, 255, 255, 0.7);
                     backdrop-filter: blur(5px);
-                    border: 2px solid rgba(168, 85, 247, 0.4);
+                    border: 2px solid rgba(59, 130, 246, 0.4);
                     color: var(--text-color);
                     font-weight: 600;
                     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
                     z-index: 5;
                     animation: float 6s ease-in-out infinite;
                 }
-                .react { top: -20px; right: -20px; animation-delay: 0s; color: #61dafb; }
-                .node { bottom: 40px; left: -30px; animation-delay: 2s; color: #68a063; }
-                .js { bottom: -20px; right: 40px; animation-delay: 4s; color: #f7df1e; }
+                .react { top: -20px; right: -20px; animation-delay: 0s; color: #0284c7; }
+                .node { bottom: 40px; left: -30px; animation-delay: 2s; color: #16a34a; }
+                .js { bottom: -20px; right: 40px; animation-delay: 4s; color: #d97706; }
                 
                 @keyframes float {
                     0%, 100% { transform: translateY(0); }
@@ -359,19 +359,3 @@ const Hero = () => {
 };
 
 export default Hero;
-// Update 40 - 50704664
-// Update 42 - 1958699698
-// Update 51 - 782313297
-// Update 68 - 825113593
-// Update 79 - 756379718
-// Update 53 - 1115895661
-// Update 69 - 316453780
-// Update 72 - 1415758561
-// Update 73 - 1507803006
-// Update 74 - 398841943
-// Update 88 - 1455121537
-// Update 31 - 1568961096
-// Update 35 - 506332739
-// Update 42 - 941571997
-// Update 50 - 1233455066
-// Update 54 - 1346675894
