@@ -65,7 +65,7 @@ const About = () => {
                                 My goal is to contribute effectively to impactful software solutions in a fast-evolving tech landscape.
                             </p>
                             <motion.a
-                                href="/assets/Dilina_Randima_CV.pdf"
+                                href={`${import.meta.env.BASE_URL}assets/Dilina_Randima_CV.pdf`}
                                 download="Dilina_Randima_CV.pdf"
                                 className="download-btn"
                                 whileHover={{ scale: 1.05 }}
