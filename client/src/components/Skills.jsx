@@ -101,22 +101,29 @@ const Skills = () => {
                 .skills-grid {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
-                    gap: 1.5rem;
+                    gap: 1rem;
                     max-width: 1200px;
                     margin: 0 auto;
                     padding: 10px;
                 }
 
+                @media (max-width: 380px) { /* Apple Watch / Extremely small screens */
+                    .skills-grid {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                }
+
                 @media (min-width: 640px) {
                     .skills-grid {
                         grid-template-columns: repeat(3, 1fr);
-                        gap: 2rem;
+                        gap: 1.5rem;
                     }
                 }
 
                 @media (min-width: 1024px) {
                     .skills-grid {
                         grid-template-columns: repeat(5, 1fr);
+                        gap: 2rem;
                     }
                 }
 
@@ -125,12 +132,12 @@ const Skills = () => {
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    padding: 2.5rem 1.5rem;
-                    gap: 1.2rem;
-                    border: 1px solid rgba(255, 255, 255, 0.4); /* Glassy Highlight Border */
+                    padding: 1.5rem 1rem; /* Compact for mobile/watches */
+                    gap: 1rem;
+                    border: 1px solid rgba(255, 255, 255, 0.4);
                     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
                     border-right: 1px solid rgba(255, 255, 255, 0.1);
-                    border-radius: 24px; /* Round Shape */
+                    border-radius: 20px;
                     background: var(--glass-bg);
                     position: relative;
                     overflow: hidden;
@@ -138,7 +145,16 @@ const Skills = () => {
                     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
                     box-shadow: 
                         0 10px 20px -5px rgba(0, 0, 0, 0.1),
-                        inset 0 0 0 1px rgba(255, 255, 255, 0.2); /* Inner 3D rim */
+                        inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+                }
+
+                @media (min-width: 640px) {
+                    .skill-item {
+                        padding: 2.5rem 1.5rem; /* Original large padding for tablets/desktop */
+                        gap: 1.2rem;
+                        border-radius: 24px;
+                    }
+                }
                 }
 
                 .spotlight-overlay {
