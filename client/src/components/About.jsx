@@ -52,7 +52,7 @@ const About = () => {
                             <div className="icon-box">
                                 <FaUser className="card-icon" />
                             </div>
-                            <h3>Who I Am</h3>
+                            <h3>Who Am I</h3>
                         </div>
                         <div className="card-content">
                             <p>
