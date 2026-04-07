@@ -13,7 +13,7 @@ import ColoredFigmaIcon from './ColoredFigmaIcon';
 const Skills = () => {
     const skills = [
         { name: "React", icon: <FaReact />, color: "#61dafb" },
-        { name: "Node.js", icon: <FaNodeJs />, color: "#68a063" },
+        { name: "Node.js", icon: <FaNodeJs />, color: "#8CC84B" },
         { name: "MongoDB", icon: <BiLogoMongodb />, color: "#47A248" },
         { name: "Java", icon: <FaJava />, color: "#f89820" },
         { name: "HTML5", icon: <FaHtml5 />, color: "#e34f26" },
