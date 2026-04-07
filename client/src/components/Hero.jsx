@@ -20,14 +20,7 @@ const Hero = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    <motion.div
-                        className="badge"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.1 }}
-                    >
-                        <FaCode className="badge-icon" /> Available for Hire
-                    </motion.div>
+
 
                     <motion.h2
                         className="greeting"
