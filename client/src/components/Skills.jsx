@@ -116,7 +116,7 @@ const Skills = () => {
 
                 @media (min-width: 1024px) {
                     .skills-grid {
-                        grid-template-columns: repeat(6, 1fr);
+                        grid-template-columns: repeat(5, 1fr);
                     }
                 }
 
